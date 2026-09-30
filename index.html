@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>My Library</title>
+  <meta name="theme-color" content="#3b4cca">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Every screen is rendered into this element by script.js -->
+  <main id="app"></main>
+
+  <nav id="nav" aria-label="Main navigation">
+    <button data-nav="home"><span class="ni">🏠</span>Home</button>
+    <button data-nav="shelf"><span class="ni">📚</span>Library</button>
+    <button data-nav="library"><span class="ni">📋</span>List</button>
+    <button data-nav="pick" class="nav-add"><span class="ni">+</span>Add</button>
+    <button data-nav="settings"><span class="ni">⚙️</span>Settings</button>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
