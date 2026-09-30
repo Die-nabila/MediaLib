@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>My Library</title>
+  <meta name="description" content="My own little enchanted library for books, webtoons, movies and series.">
+  <meta name="application-name" content="My Library">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#fbf6ee" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1b1630" media="(prefers-color-scheme: dark)">
+  <!-- Standalone / installed-app behaviour -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="My Library">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="icons/app-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Every screen is rendered into this element by script.js -->
+  <main id="app"></main>
+
+  <nav id="nav" aria-label="Main navigation">
+    <button data-nav="home"><span class="ni">🏠</span>Home</button>
+    <button data-nav="shelf"><span class="ni">📚</span>Library</button>
+    <button data-nav="library"><span class="ni">📋</span>List</button>
+    <button data-nav="stats"><span class="ni">📊</span>Stats</button>
+    <button data-nav="pick" class="nav-add"><span class="ni">+</span>Add</button>
+    <button data-nav="settings"><span class="ni">⚙️</span>Settings</button>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
